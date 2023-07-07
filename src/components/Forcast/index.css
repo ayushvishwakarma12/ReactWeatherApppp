@@ -1,0 +1,132 @@
+.today-weather {
+  display: flex;
+  flex-direction: column;
+}
+
+.forecast {
+  width: 40%;
+  float: left;
+  height: 100%;
+}
+
+.forecast-icon {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.today-weather h3 {
+  text-transform: capitalize;
+  font-size: 40px;
+  color: #fff;
+  width: 80%;
+  margin: 0px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-width: thin;
+  font-weight: 500;
+  border-bottom: 1px solid #eee;
+  align-self: center;
+}
+
+.today-weather ul li {
+  width: 100%;
+  margin: 0 auto;
+  line-height: 39px;
+  border-width: thin;
+  border-bottom: 1px solid #777;
+  color: #eee;
+  font-weight: 500;
+  text-align: left;
+  list-style-type: none;
+  padding: 0px 20px 0px 20px;
+}
+
+.today-weather ul li span {
+  float: right;
+}
+
+.today-weather ul li:nth-child(5) {
+  border-bottom: none;
+}
+
+.search-input-box {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  align-self: center;
+}
+
+.search-box {
+  display: flex;
+  width: 100%;
+}
+
+.weather-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+@media screen and (max-width: 920px) {
+  .weather-list {
+    padding-inline-start: 10px;
+  }
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+.search-input-box .img-box {
+  background: rgb(255, 255, 255, 0.2);
+  border-radius: 50%;
+  height: 35px;
+  width: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+
+.search-icon {
+  width: 50%;
+}
+.search-input-box img {
+  cursor: pointer;
+}
+.search-input-box .search-bar {
+  border: none;
+  padding: 10px 0px 10px 10px;
+  background: transparent;
+  color: white;
+  border-bottom: 1px solid;
+  font-size: 16px;
+  width: 100%;
+}
+.search-input-box .search-bar::placeholder {
+  color: white;
+}
+.search-bar:focus {
+  outline: none;
+  border-bottom: 1px solid gray;
+  transition: all 1s ease-in-out;
+}
+
+.list-container {
+  width: 90%;
+}
+
+@media screen and (max-width: 920px) {
+  .list-container {
+    width: 100%;
+  }
+}
